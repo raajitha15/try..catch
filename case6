@@ -1,0 +1,36 @@
+//try...catch case
+import java.util.Scanner;
+class Case6
+{
+	public static void main(String[] args) 
+	{
+		int num1,num2,result=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num1 value");
+		num1=sc.nextInt();
+		System.out.println("enter the num2 value");
+		num2=sc.nextInt();
+		try
+		{
+			result=num1/num2;
+			System.out.println("the result are: "+result);
+		}
+		catch(Exception e)
+		{
+			System.out.println("result is not valid");
+		}
+		catch(ArithmeticException e1)
+		{
+			System.out.println("result not found");
+		}
+		catch (Exception e2)
+		{
+			System.out.println("pls enter the correct value");
+			
+		}
+	}
+}
+
+/* error: exception is already declared*/
+
+
