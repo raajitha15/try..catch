@@ -1,0 +1,28 @@
+//try..catch array
+import java.util.Scanner;
+class	Case3  
+{
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the size array");
+		int size=sc.nextInt();
+		int num[]=new int[size];
+		System.out.println("the last index of array is:"+(size-1));
+        System.out.println("enter element for 5th index");
+       try
+       {
+        num[5]=sc.nextInt();
+       }
+     catch(ArrayIndexOutOfBoundsException e)
+     {
+      System.out.println("you should declare an array whose size is more");
+     }
+     System.out.println("i can work when there is no exception");
+
+	}
+}
+
+
+
+//it is executed
