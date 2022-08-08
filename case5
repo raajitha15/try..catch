@@ -1,0 +1,36 @@
+//try...catch case
+import java.util.Scanner;
+class Case5 
+{
+	public static void main(String[] args) 
+	{
+		int num1,num2,num3,result1=0,result2=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num1 value");
+		num1=sc.nextInt();
+		System.out.println("enter the num2 value");
+		num2=sc.nextInt();
+		System.out.println("enter the num3 value");
+		num3=sc.nextInt();
+		try
+		{
+			result1=num1/num2;
+			System.out.println("the result are: "+result1);
+		}
+		try
+		{
+			result2=num2/num3;
+			System.out.println("the result are: "+result2);
+		}
+		catch (Exception e)
+		{
+			System.out.println("pls enter the correct value");
+			
+		}
+	}
+}
+
+/* error: 'try' without 'catch', 'finally' or resource declarations
+                try*/
+
+
