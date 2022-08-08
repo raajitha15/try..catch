@@ -1,0 +1,27 @@
+//try...catch case
+import java.util.Scanner;
+class Case2 
+{
+	public static void main(String[] args) 
+	{
+		int num1,num2,result=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num1 value");
+		num1=sc.nextInt();
+		System.out.println("enter the num2 value");
+		num2=sc.nextInt();
+		try
+		{
+			result=num1/num2;
+			System.out.println("the result are: "+result);
+		}
+		catch ()
+		{
+			System.out.println("pls enter the correct value");
+			
+		}
+	}
+}
+
+
+//illegeal start type
