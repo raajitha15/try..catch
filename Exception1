@@ -1,0 +1,31 @@
+//WAP for the below requirement
+//take a try block and provide division of any positive number by 0
+//take a catch block and catch the arrayIndexOutOfBoundsException
+//Take  a finally block and provide a message finally will execute at any cost.
+import java.util.Scanner;
+class DemoException 
+{
+	public static void main(String[] args) 
+	{
+		int res=0;
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the num1 value");
+		int num1=sc.nextInt();
+		System.out.println("enter the num2 value");
+		int num2=sc.nextInt();
+		try
+		{
+			 res=num1/num2;
+			 System.out.println("the result is: "+res);
+		}
+		catch (ArithmeticException e)
+		{
+			System.out.println("Exception handled");
+		}
+		finally
+		{
+			System.out.println("finally will execute at any cost");
+		}
+		
+	}
+}
