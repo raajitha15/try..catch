@@ -1,0 +1,26 @@
+//WAP for the below requirement
+//create a try block and provide the declaration of an array with a size of 5
+//after the declaration of array provide the code to display any message
+//provide the code to terminate the exceution or shut down the JVM
+//provide the code to display a simple message
+//provide a code to get the value present in array of 20
+//catch the exception object in the catch block 
+class DemoException2 
+{
+	public static void main(String[] args) 
+	{
+		try
+		{
+			int arr[]=new int[5];
+			System.out.println("world");
+			System.exit(0);
+			System.out.println("hii");
+			System.out.println(arr[20]);
+		}
+		catch (ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("handled");
+		}
+		
+	}
+}
